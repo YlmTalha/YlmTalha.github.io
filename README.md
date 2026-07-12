@@ -19,6 +19,12 @@ npm run build
 
 Site yalnızca Vite geliştirme bağımlılığını kullanır. Arayüz ve etkileşimler saf HTML, CSS ve JavaScript ile hazırlanmıştır.
 
+## Belgeler
+
+- `assets/documents/Talha_Yilmaz_CV.pdf`: ATS uyumlu, tek sütunlu PDF CV
+- `assets/documents/Talha_Yilmaz_ATS_CV.docx`: düzenlenebilir ATS CV
+- `assets/documents/Talha_Yilmaz_Portfolyo.pdf`: ayrıntılı proje portfolyosu
+
 ## GitHub Pages'e yükleme
 
 Repository adı `ylmtalha.github.io` olmalıdır. Proje `main` dalına gönderildiğinde içindeki GitHub Actions workflow'u siteyi otomatik olarak oluşturur ve yayınlar. Ayrıntılı talimatlar için `GITHUB_YAYINLAMA.md` dosyasını kullan.
