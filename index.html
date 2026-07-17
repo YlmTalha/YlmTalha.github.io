@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0b1014" />
-    <meta name="description" content="Talha Yılmaz'ın yazılım, sistem programlama, IoT/elektronik ve RF sinyal analizi alanlarındaki seçili proje ve deneyimleri." />
+    <meta name="description" content="Talha Yılmaz'ın sistemler, web, gömülü elektronik/IoT ve siber güvenlik alanlarındaki seçili proje ve deneyimleri." />
     <meta property="og:title" content="Talha Yılmaz — Bilgisayar Mühendisliği Portföyü" />
     <meta property="og:description" content="Yazılım ile donanım arasında çalışan projeler, gerçek ürün deneyimi ve teknik üretim." />
     <meta property="og:type" content="website" />
-    <title>Talha Yılmaz — Yazılım, Sistemler &amp; IoT</title>
+    <meta property="og:image" content="https://ylmtalha.github.io/assets/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Talha Yılmaz — Sistemler, Web &amp; Güvenlik</title>
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -23,6 +29,11 @@
         "email": "mailto:ylmtalha05@gmail.com",
         "telephone": "+90 536 066 69 59",
         "address": { "@type": "PostalAddress", "addressLocality": "İstanbul", "addressCountry": "TR" },
+        "worksFor": { "@type": "Organization", "name": "Charge Mahal Enerji A.Ş." },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Biruni Üniversitesi" },
+          { "@type": "EducationalOrganization", "name": "42 İstanbul" }
+        ],
         "sameAs": [
           "https://github.com/YlmTalha",
           "https://www.linkedin.com/in/talha-yilmaz-1216672a6/"
@@ -31,31 +42,59 @@
     </script>
   </head>
   <body>
-    <a class="skip-link" href="#main">İçeriğe geç</a>
+    <a class="skip-link" href="#main" data-i18n="skip_link">İçeriğe geç</a>
     <div class="grain" aria-hidden="true"></div>
     <div class="pointer-glow" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
     <header class="site-header" data-header>
-      <a class="logo" href="#top" aria-label="Talha Yılmaz ana sayfa">
+      <a class="logo" href="#top" aria-label="Talha Yılmaz ana sayfa" data-i18n-aria="logo_aria">
         <span class="logo-mark">TY</span>
-        <span class="logo-copy"><strong>Talha Yılmaz</strong><small>Mühendislik portföyü</small></span>
+        <span class="logo-copy"><strong>Talha Yılmaz</strong><small data-i18n="logo_role">Bilgisayar Mühendisi</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
-        <span></span><span></span><span></span><span class="sr-only">Menüyü aç</span>
+        <span></span><span></span><span></span><span class="sr-only" data-i18n="menu_open_sr">Menüyü aç</span>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Ana menü">
-        <a href="#about">Hakkımda</a>
-        <a href="#contact-top">İletişim</a>
-        <a href="#work">Projeler</a>
-        <a href="#experience">Deneyim</a>
-        <a href="#journey">Eğitim</a>
-        <a href="#certificates">Sertifikalar</a>
-        <a href="./assets/documents/Talha_Yilmaz_CV.pdf" target="_blank" rel="noopener">ATS CV</a>
-        <a href="./assets/documents/Talha_Yilmaz_Portfolyo.pdf" target="_blank" rel="noopener">Portfolyo</a>
+        <div class="mobile-nav-intro" aria-hidden="true">
+          <span>MENÜ / 2026</span>
+          <strong data-i18n="mobile_menu_title">Portföyü keşfet</strong>
+        </div>
+
+        <div class="nav-list">
+          <a href="#about"><span>01</span><strong data-i18n="nav_about">Hakkımda</strong><i>↘</i></a>
+          <a href="#contact-top"><span>02</span><strong data-i18n="nav_contact">İletişim</strong><i>↘</i></a>
+          <a href="#work"><span>03</span><strong data-i18n="nav_work">Projeler</strong><i>↘</i></a>
+          <a href="#experience"><span>04</span><strong data-i18n="nav_experience">Deneyim</strong><i>↘</i></a>
+          <a href="#capabilities"><span>05</span><strong data-i18n="nav_capabilities">Yetkinlikler</strong><i>↘</i></a>
+          <a href="#journey"><span>06</span><strong data-i18n="nav_journey">Eğitim</strong><i>↘</i></a>
+          <a href="#certificates"><span>07</span><strong data-i18n="nav_certificates">Sertifikalar</strong><i>↘</i></a>
+        </div>
+
+        <div class="mobile-nav-documents">
+          <a class="mobile-nav-document mobile-nav-document-primary" href="./assets/documents/Talha_Yilmaz_Portfolyo.pdf" target="_blank" rel="noopener">
+            <span data-i18n="mobile_doc1_label">PDF DOSYASI</span><strong data-i18n="mobile_doc1_title">Portfolyoyu aç</strong><i>↗</i>
+          </a>
+          <a class="mobile-nav-document" href="./assets/documents/ATS_CV.pdf" target="_blank" rel="noopener">
+            <span data-i18n="mobile_doc2_label">İŞ BAŞVURUSU</span><strong data-i18n="mobile_doc2_title">CV’yi aç</strong><i>↗</i>
+          </a>
+        </div>
+
+        <div class="mobile-nav-footer">
+          <span data-i18n="mobile_footer_location">İstanbul, Türkiye</span>
+          <div>
+            <a href="mailto:ylmtalha05@gmail.com" data-i18n="mobile_footer_email">E-posta</a>
+            <a href="https://github.com/YlmTalha" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/talha-yilmaz-1216672a6/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
       </nav>
       <div class="header-actions">
-        <a class="header-cta header-cta-secondary" href="./assets/documents/Talha_Yilmaz_Portfolyo.pdf" target="_blank" rel="noopener">Portfolyo <span>↗</span></a>
-        <a class="header-cta" href="./assets/documents/Talha_Yilmaz_CV.pdf" target="_blank" rel="noopener">ATS CV <span>↗</span></a>
+        <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language / Dili değiştir">
+          <span data-lang-toggle-label>EN</span>
+        </button>
+        <a class="header-cta header-cta-secondary" href="./assets/documents/Talha_Yilmaz_Portfolyo.pdf" target="_blank" rel="noopener"><span data-i18n="header_cta_portfolio">Portfolyo</span> <span>↗</span></a>
+        <a class="header-cta" href="./assets/documents/ATS_CV.pdf" target="_blank" rel="noopener">CV <span>↗</span></a>
       </div>
     </header>
 
@@ -66,26 +105,26 @@
         <div class="hero-content">
           <div class="hero-kicker reveal">
             <span class="pulse"></span>
-            <span>İstanbul · Yeni proje ve ekip fırsatlarına açığım</span>
+            <span data-i18n="hero_kicker">İstanbul / Hibrit · Staj, yarı zamanlı ve tam zamanlı fırsatlara açığım</span>
           </div>
-          <h1 class="reveal">
+          <h1 class="reveal" data-i18n-html="hero_h1">
             Fikirleri çalışan
             <span class="outline-text">sistemlere</span>
             dönüştürüyorum.
           </h1>
           <div class="hero-bottom reveal">
-            <p>Bilgisayar mühendisliği öğrencisiyim; yazılım, sistem programlama, IoT/elektronik ve RF sinyal analizi alanlarında projeler geliştiriyorum.</p>
+            <p data-i18n="hero_p">Bilgisayar mühendisliği öğrencisiyim; Charge Mahal Enerji’de bir EV şarj platformunun teknik tarafını yürütüyorum ve TEKNOFEST 2026’da 3 farklı kategoride takım arkadaşlarımla çalışıyorum.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#work">Seçili projeler <span>↓</span></a>
-              <a class="button button-ghost" href="#contact-top">Birlikte çalışalım</a>
+              <a class="button button-primary" href="#work"><span data-i18n="hero_btn_primary">Seçili projeler</span> <span>↓</span></a>
+              <a class="button button-ghost" href="#contact-top" data-i18n="hero_btn_ghost">Birlikte çalışalım</a>
             </div>
           </div>
         </div>
 
-        <aside class="hero-console reveal" aria-label="Profil özeti">
+        <aside class="hero-console reveal" aria-label="Profil özeti" data-i18n-aria="console_aria">
           <div class="console-head">
             <span><i></i> PROFIL.AKTIF</span>
-            <span>TY / 2026</span>
+            <span>Talha Yılmaz / 2026</span>
           </div>
           <div class="console-orbit" aria-hidden="true">
             <div class="orbit orbit-a"><i></i></div>
@@ -93,180 +132,197 @@
             <div class="orbit-core">TY</div>
           </div>
           <dl class="console-list">
-            <div><dt>Rol</dt><dd>Mühendis adayı</dd></div>
-            <div><dt>Üretim</dt><dd>Yazılım + Donanım</dd></div>
-            <div><dt>Eğitim</dt><dd>Biruni / 42 İstanbul</dd></div>
-            <div><dt>Odak</dt><dd>Sistemler · IoT · RF</dd></div>
+            <div><dt data-i18n="console_role_label">Rol</dt><dd data-i18n="console_role_value">Bilgisayar Mühendisliği Öğrencisi</dd></div>
+            <div><dt data-i18n="console_production_label">Üretim</dt><dd data-i18n="console_production_value">Yazılım + Donanım</dd></div>
+            <div><dt data-i18n="console_education_label">Eğitim</dt><dd>Biruni Üniversitesi</dd></div>
+            <div><dt data-i18n="console_focus_label">Odak</dt><dd data-i18n="focus_tags">Sistemler · Web · Gömülü · Güvenlik</dd></div>
           </dl>
         </aside>
 
-        <section class="hero-marquee" aria-label="Çalışma alanları">
+        <section class="hero-marquee" aria-label="Çalışma alanları" data-i18n-aria="marquee_aria">
           <div class="marquee-track">
-            <span>SOFTWARE ENGINEERING</span><b>✦</b><span>SYSTEM PROGRAMMING</span><b>✦</b><span>IoT &amp; ELECTRONICS</span><b>✦</b><span>RF SIGNAL ANALYSIS</span><b>✦</b>
-            <span aria-hidden="true">SOFTWARE ENGINEERING</span><b aria-hidden="true">✦</b><span aria-hidden="true">SYSTEM PROGRAMMING</span><b aria-hidden="true">✦</b><span aria-hidden="true">IoT &amp; ELECTRONICS</span><b aria-hidden="true">✦</b><span aria-hidden="true">RF SIGNAL ANALYSIS</span><b aria-hidden="true">✦</b>
+            <span>SYSTEMS</span><b>✦</b><span>WEB</span><b>✦</b><span>EMBEDDED</span><b>✦</b><span>SECURITY</span><b>✦</b>
+            <span aria-hidden="true">SYSTEMS</span><b aria-hidden="true">✦</b><span aria-hidden="true">WEB</span><b aria-hidden="true">✦</b><span aria-hidden="true">EMBEDDED</span><b aria-hidden="true">✦</b><span aria-hidden="true">SECURITY</span><b aria-hidden="true">✦</b>
           </div>
         </section>
       </section>
 
       <section class="section section-light" id="about">
-        <div class="section-label reveal"><span>01</span><p>Hakkımda</p></div>
+        <div class="section-label reveal"><span>01</span><p data-i18n="nav_about">Hakkımda</p></div>
         <div class="about-layout">
           <div class="about-heading reveal">
-            <p class="eyebrow">Kodun ötesinde</p>
-            <h2>Tek bir alana sıkışmadan, problemi uçtan uca anlıyorum.</h2>
+            <p class="eyebrow" data-i18n="about_eyebrow">Kodun ötesinde</p>
+            <h2 data-i18n="about_h2">Tek bir alana sıkışmadan, problemi uçtan uca anlıyorum.</h2>
           </div>
           <div class="about-copy reveal">
-            <p class="lead-copy">Ben Talha. Biruni Üniversitesi’nde İngilizce Bilgisayar Mühendisliği eğitimi alıyorum. 42 İstanbul Piscine sürecinde edindiğim yoğun problem çözme ve sistem programlama pratiğini projelerime taşıyorum.</p>
-            <p>Charge Mahal Enerji’de teknik operasyonu yalnızca takip etmekle kalmıyorum; sahada gördüğüm ihtiyaçları web, mobil ve tahsilat araçlarına dönüştürüyorum. Bu deneyim bana kullanıcıyı, cihazı, API’yi ve iş süreçlerini aynı bütün içinde değerlendirmeyi öğretti.</p>
-            <p>TEKNOFEST 2026 takım çalışmalarında RF/sinyal analizi, çip tasarımı ve insansız kara aracı alanlarına katkı sağlıyorum. Uzun vadede sistemler ve siber güvenlik alanlarında derinleşmek, teknoloji üreten ekiplerde sorumluluk almak istiyorum.</p>
+            <p class="lead-copy" data-i18n="about_p1">Ben Talha. Biruni Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Yazılım, sistemler, IoT/elektronik ve teknik operasyon alanlarında uygulamalı deneyim kazanıyorum.</p>
+            <p data-i18n="about_p2">Charge Mahal Enerji’de teknik destek ve operasyonun yanında yazılım bağlantılı işlerde çalışıyorum; sahada gördüğüm ihtiyaçları web, mobil ve tahsilat araçlarına dönüştürüyorum.</p>
+            <p data-i18n="about_p3">TEKNOFEST 2026’da üç farklı kategoride yer alıyorum. Elektronik Harp’te takımımızın RF sinyal analizi ve yazılım tarafını yürütüyorum. İnsansız Kara Aracı’nda araç mekaniği ve batarya sistemleriyle ilgileniyorum, şu an video aşamasındayız. Çip Tasarım’da ise RISC-V tabanlı mikrodenetleyici üzerinde çalıştığımız takım KTR aşamasında elendi.</p>
+            <p data-i18n="about_p4">Siber güvenlik uzun vadede ilerlemek istediğim alanlardan biri; hangi alt alanda derinleşeceğimi proje ve iş deneyimleriyle keşfetmeye devam ediyorum. Hedefim, teknoloji üreten ekiplerde yer almak ve Milli Teknoloji Hamlesi vizyonuna katkı sağlayacak projelerde görev almak.</p>
           </div>
         </div>
         <div class="proof-grid">
-          <article class="proof-card reveal"><span>01</span><h3>Gerçek operasyon</h3><p>EV şarj istasyonlarında kullanıcı, ödeme, cihaz ve saha süreçleriyle çalışma.</p></article>
-          <article class="proof-card reveal"><span>02</span><h3>Ürün geliştirme</h3><p>Web sitesi, Flutter operatör uygulaması ve tahsilat paneli geliştirme.</p></article>
-          <article class="proof-card reveal"><span>03</span><h3>Fiziksel üretim</h3><p>ESP32 devreleri, sensörler, batarya paketi ve güç elektroniği prototipleri.</p></article>
-          <article class="proof-card reveal"><span>04</span><h3>Teknik araştırma</h3><p>SDR tabanlı sinyal tespiti, sınıflandırma, yön ve konum kestirimi.</p></article>
+          <article class="proof-card reveal"><span>01</span><h3 data-i18n="proof1_title">Gerçek operasyon</h3><p data-i18n="proof1_desc">EV şarj istasyonlarında kullanıcı, ödeme, cihaz ve saha süreçleriyle çalışma.</p></article>
+          <article class="proof-card reveal"><span>02</span><h3 data-i18n="proof2_title">Ürün geliştirme</h3><p data-i18n="proof2_desc">Web sitesi, Flutter operatör uygulaması ve tahsilat paneli geliştirme.</p></article>
+          <article class="proof-card reveal"><span>03</span><h3 data-i18n="proof3_title">Fiziksel üretim</h3><p data-i18n="proof3_desc">ESP32 devreleri, sensörler, batarya paketi ve güç elektroniği prototipleri.</p></article>
+          <article class="proof-card reveal"><span>04</span><h3 data-i18n="proof4_title">Teknik araştırma</h3><p data-i18n="proof4_desc">SDR tabanlı sinyal tespiti, sınıflandırma, yön ve konum kestirimi.</p></article>
         </div>
       </section>
 
       <section class="contact-early" id="contact-top">
         <div class="contact-stamp reveal" aria-hidden="true"><span>LET'S</span><span>BUILD</span></div>
         <div class="contact-copy reveal">
-          <div class="section-label section-label-inline"><span>02</span><p>İletişim</p></div>
-          <h2>Üzerinde çalışmaya değer bir problem varsa, konuşacak çok şeyimiz var.</h2>
-          <p>Yazılım, sistemler, IoT/elektronik veya teknik ürün geliştirme odaklı proje, staj ve ekip fırsatlarına açığım.</p>
+          <div class="section-label section-label-inline"><span>02</span><p data-i18n="nav_contact">İletişim</p></div>
+          <h2 data-i18n="contact_h2">Üzerinde çalışmaya değer bir problem varsa, konuşacak çok şeyimiz var.</h2>
+          <p data-i18n="contact_p">Staj, yarı zamanlı ve tam zamanlı iş fırsatlarına açığım; İstanbul merkezli ya da uzaktan/hibrit çalışabilirim. Odağım yazılım, web, sistemler, gömülü elektronik/IoT, siber güvenlik ve teknik ürün geliştirme.</p>
           <a class="mail-link" href="mailto:ylmtalha05@gmail.com?subject=Portfolyo%20%C3%BCzerinden%20ileti%C5%9Fim">ylmtalha05@gmail.com <span>↗</span></a>
         </div>
         <div class="contact-links reveal">
-          <a href="tel:+905360666959"><span>Telefon</span><strong>+90&nbsp;536&nbsp;066&nbsp;69&nbsp;59</strong><i>↗</i></a>
-          <a href="https://github.com/YlmTalha" target="_blank" rel="noopener"><span>Kodlar</span><strong>GitHub / YlmTalha</strong><i>↗</i></a>
-          <a href="https://www.linkedin.com/in/talha-yilmaz-1216672a6/" target="_blank" rel="noopener"><span>Profesyonel profil</span><strong>LinkedIn</strong><i>↗</i></a>
-          <a href="./assets/documents/Talha_Yilmaz_Portfolyo.pdf" target="_blank" rel="noopener"><span>Detaylı belge</span><strong>Portfolyo PDF</strong><i>↗</i></a>
+          <a href="tel:+905360666959"><span data-i18n="phone_label">Telefon</span><strong>+90&nbsp;536&nbsp;066&nbsp;69&nbsp;59</strong><i>↗</i></a>
+          <a href="https://github.com/YlmTalha" target="_blank" rel="noopener"><span data-i18n="github_label">Kodlar</span><strong>GitHub / YlmTalha</strong><i>↗</i></a>
+          <a href="https://www.linkedin.com/in/talha-yilmaz-1216672a6/" target="_blank" rel="noopener"><span data-i18n="linkedin_label">Profesyonel profil</span><strong>LinkedIn</strong><i>↗</i></a>
+          <a href="./assets/documents/Talha_Yilmaz_Portfolyo.pdf" target="_blank" rel="noopener"><span data-i18n="pdf_label">Detaylı belge</span><strong data-i18n="pdf_value">Portfolyo PDF</strong><i>↗</i></a>
+          <a href="./assets/documents/Talha_Yilmaz.vcf" download="Talha_Yilmaz.vcf"><span data-i18n="vcf_label">Kişi kartı</span><strong data-i18n="vcf_value">Rehbere ekle</strong><i>↓</i></a>
         </div>
       </section>
 
       <section class="section work-section" id="work">
         <div class="section-intro reveal">
-          <div class="section-label"><span>03</span><p>Seçili projeler</p></div>
-          <h2>Çalışan ürünler.<br /><em>Ölçülebilir öğrenme.</em></h2>
-          <p>Yazılımdan fiziksel prototipe uzanan, farklı disiplinleri aynı sonuçta buluşturan seçili çalışmalar.</p>
+          <div class="section-label"><span>03</span><p data-i18n="work_label">Seçili projeler</p></div>
+          <h2 data-i18n-html="work_h2">Çalışan ürünler.<br /><em>Ölçülebilir öğrenme.</em></h2>
+          <p data-i18n="work_p">Yazılımdan fiziksel prototipe uzanan, farklı disiplinleri aynı sonuçta buluşturan seçili çalışmalar.</p>
         </div>
 
         <article class="project project-featured reveal" data-category="rf software">
           <div class="project-info">
-            <div class="project-meta"><span>01 / RF + YAZILIM</span><span>TEKNOFEST 2026</span></div>
-            <h3>RF Sinyal Analizi<br />ve Yön Bulma</h3>
-            <p>PlutoSDR’dan alınan 2,4 GHz RF kayıtlarında sinyal tespiti, parametre çıkarımı, sınıflandırma, yön bulma ve konum kestirimi adımlarını tek bir arayüzde birleştiren analiz sistemi.</p>
+            <div class="project-meta"><span data-i18n="proj1_meta1">01 / RF + YAZILIM</span><span data-i18n="proj1_meta2">TEKNOFEST 2026 · ELEKTRONİK HARP</span></div>
+            <h3 data-i18n-html="proj1_h3">RF Sinyal Analizi<br />ve Yön Bulma</h3>
+            <p data-i18n="proj1_p">PlutoSDR’dan alınan 2,4 GHz RF kayıtlarında sinyal tespiti, parametre çıkarımı, sınıflandırma, yön bulma ve konum kestirimi adımlarını tek bir arayüzde birleştiren analiz sistemi.</p>
             <ul>
-              <li>Welch PSD ve adaptif eşik kullanarak sinyal tespiti</li>
-              <li>Merkez frekans, bant genişliği ve SNR çıkarımıyla cihaz sınıflandırması</li>
-              <li>360° yön taraması ve LOB kesişimiyle konum kestirimi</li>
+              <li data-i18n="proj1_li1">Welch PSD ve adaptif eşik kullanarak sinyal tespiti</li>
+              <li data-i18n="proj1_li2">Merkez frekans, bant genişliği ve SNR çıkarımıyla cihaz sınıflandırması</li>
+              <li data-i18n="proj1_li3">360° yön taraması ve LOB kesişimiyle konum kestirimi</li>
+              <li data-i18n="proj1_li4">Gerçek bir DJI Inspire 2 (2,4 GHz) kaydı üzerinde test: sistem dronun kontrol sinyalini tespit edip “tehlikeli” olarak sınıflandırdı, yönünü ve konumunu başarıyla kestirdi</li>
             </ul>
             <div class="tech-row"><span>Python</span><span>PySide6</span><span>PlutoSDR</span><span>Sinyal İşleme</span></div>
+            <a class="project-code-link" href="https://github.com/YlmTalha/Elektronik-Harp" target="_blank" rel="noopener"><span data-i18n="view_code">Kodu incele</span> <span>↗</span></a>
           </div>
           <div class="project-media rf-media">
             <button class="media-card media-wide" type="button" data-lightbox="/assets/images/rf-spectrum-detection.jpg" data-caption="Welch PSD, gürültü tabanı ve adaptif eşik ile sinyal tespiti">
               <img src="/assets/images/rf-spectrum-detection.jpg" alt="RF sinyal tespiti spektrum grafiği" loading="lazy" />
-              <span>01 — Sinyal tespiti</span>
+              <span data-i18n="media1">01 — Sinyal tespiti</span>
             </button>
             <button class="media-card" type="button" data-lightbox="/assets/images/rf-direction-finding.jpg" data-caption="360 derece genlik taramasıyla yön bulma">
               <img src="/assets/images/rf-direction-finding.jpg" alt="RF yön bulma polar grafiği" loading="lazy" />
-              <span>02 — Yön bulma</span>
+              <span data-i18n="media2">02 — Yön bulma</span>
             </button>
             <button class="media-card" type="button" data-lightbox="/assets/images/rf-location-estimation.jpg" data-caption="LOB kesişimiyle konum kestirimi">
               <img src="/assets/images/rf-location-estimation.jpg" alt="RF sinyali konum kestirimi grafiği" loading="lazy" />
-              <span>03 — Konum kestirimi</span>
+              <span data-i18n="media3">03 — Konum kestirimi</span>
             </button>
           </div>
         </article>
 
         <article class="project reveal" data-category="iot software">
           <div class="project-info">
-            <div class="project-meta"><span>02 / IoT + WEB</span><span>TAKIM PROJESİ</span></div>
+            <div class="project-meta"><span>02 / IoT + WEB</span><span data-i18n="proj2_meta2">TAKIM PROJESİ</span></div>
             <h3>LifeCoreSen</h3>
-            <p>Bina kolonlarındaki nem, su sızıntısı, titreşim ve gerinim verilerini gerçek zamanlı izleyerek durum ve alarm bilgilerini web paneline taşıyan yapısal sağlık izleme sistemi.</p>
+            <p data-i18n="proj2_p">Bina kolonlarındaki nem, su sızıntısı, titreşim ve gerinim verilerini gerçek zamanlı izleyerek durum ve alarm bilgilerini web paneline taşıyan yapısal sağlık izleme sistemi.</p>
             <ul>
-              <li>ESP32 üzerinde nem, sıcaklık, gerinim ve IMU sensörlerinin entegrasyonu</li>
-              <li>Perfboard devre montajı, bağlantı hatları ve lehimleme</li>
-              <li>Wi-Fi/HTTP üzerinden arka uç (backend) ve web paneli veri akışı</li>
-              <li>Gerçek beton blok üzerinde fiziksel prototip testi</li>
+              <li data-i18n="proj2_li1">ESP32 üzerinde nem, sıcaklık, gerinim ve IMU sensörlerinin entegrasyonu</li>
+              <li data-i18n="proj2_li2">Perfboard devre montajı, bağlantı hatları ve lehimleme</li>
+              <li data-i18n="proj2_li3">Wi-Fi/HTTP üzerinden arka uç (backend) ve web paneli veri akışı</li>
+              <li data-i18n="proj2_li4">Gerçek beton blok üzerinde fiziksel prototip testi</li>
             </ul>
             <div class="tech-row"><span>ESP32</span><span>C++</span><span>Node.js</span><span>MongoDB</span></div>
+            <a class="project-code-link" href="https://github.com/YlmTalha/Lifecoresen_WebSite" target="_blank" rel="noopener"><span data-i18n="view_code">Kodu incele</span> <span>↗</span></a>
           </div>
           <div class="project-media life-media">
             <button class="media-card media-tall life-circuit" type="button" data-lightbox="/assets/images/lifecoresen-circuit-back.jpg" data-caption="Elle lehimlenen ESP32 devresi ve bağlantı hatları">
               <img src="/assets/images/lifecoresen-circuit-back.jpg" alt="Elle lehimlenmiş ESP32 devresi" loading="lazy" />
-              <span>Donanım</span>
+              <span data-i18n="media_hardware">Donanım</span>
             </button>
             <button class="media-card life-dashboard" type="button" data-lightbox="/assets/images/lifecoresen-dashboard.jpg" data-caption="Gerçek zamanlı kolon izleme paneli">
               <img src="/assets/images/lifecoresen-dashboard.jpg" alt="LifeCoreSen gerçek zamanlı kontrol paneli" loading="lazy" />
-              <span>Kontrol paneli</span>
+              <span data-i18n="media_dashboard">Kontrol paneli</span>
             </button>
             <button class="media-card life-prototype" type="button" data-lightbox="/assets/images/lifecoresen-prototype.jpg" data-caption="Beton blok üzerinde çalışan prototip">
               <img src="/assets/images/lifecoresen-prototype.jpg" alt="Beton blok üzerindeki LifeCoreSen prototipi" loading="lazy" />
-              <span>Prototip</span>
+              <span data-i18n="media_prototype">Prototip</span>
             </button>
           </div>
         </article>
 
         <article class="project project-reverse reveal" data-category="software mobile">
           <div class="project-info">
-            <div class="project-meta"><span>03 / ÜRÜN + MOBİL</span><span>İŞ PROJESİ</span></div>
-            <h3>Charge Mahal<br />Dijital Ürünleri</h3>
-            <p>EV şarj operasyonunda karşılaşılan gerçek ihtiyaçlardan doğan üç çözüm: kurumsal web sitesi, canlı istasyon takibi yapan operatör uygulaması ve ödeme bağlantısı üreten tahsilat paneli.</p>
+            <div class="project-meta"><span data-i18n="proj3_meta1">03 / ÜRÜN + MOBİL</span><span data-i18n="proj3_meta2">İŞ PROJESİ</span></div>
+            <h3 data-i18n-html="proj3_h3">Charge Mahal<br />Dijital Ürünleri</h3>
+            <p data-i18n="proj3_p">EV şarj operasyonunda karşılaşılan gerçek ihtiyaçlardan doğan üç çözüm: kurumsal web sitesi, canlı istasyon takibi yapan operatör uygulaması ve ödeme bağlantısı üreten tahsilat paneli.</p>
             <ul>
-              <li>İstasyonların aktiflik, arıza, ödeme ve kullanıcı süreçlerinin takibi</li>
-              <li>Flutter ile iOS ve Android operatör uygulaması</li>
-              <li>JWT tabanlı oturum yönetimi ve otomatik token yenileme</li>
-              <li>PayTR API ile ödeme bağlantısı üretme ve WhatsApp üzerinden paylaşma</li>
+              <li data-i18n="proj3_li1">İstasyonların aktiflik, arıza, ödeme ve kullanıcı süreçlerinin takibi</li>
+              <li data-i18n="proj3_li2">Flutter ile iOS ve Android operatör uygulaması</li>
+              <li data-i18n="proj3_li3">JWT tabanlı oturum yönetimi ve otomatik token yenileme</li>
+              <li data-i18n="proj3_li4">PayTR API ile ödeme bağlantısı üretme ve WhatsApp üzerinden paylaşma</li>
             </ul>
             <div class="tech-row"><span>Flutter</span><span>Dart</span><span>PHP</span><span>MySQL</span><span>REST API</span></div>
+            <a class="project-code-link" href="https://github.com/YlmTalha/Charge-Station-Operator-Panel-Mobile" target="_blank" rel="noopener"><span data-i18n="view_code">Kodu incele</span> <span>↗</span></a>
           </div>
-          <div class="phone-stage">
-            <button class="phone phone-left" type="button" data-lightbox="/assets/images/charge-mahal-live.jpg" data-caption="İstasyonların anlık durum ekranı"><img src="/assets/images/charge-mahal-live.jpg" alt="Charge Mahal anlık durum mobil ekranı" loading="lazy" /></button>
-            <button class="phone phone-main" type="button" data-lightbox="/assets/images/charge-mahal-active.jpg" data-caption="Aktif şarj işlemleri ekranı"><img src="/assets/images/charge-mahal-active.jpg" alt="Charge Mahal aktif işlemler mobil ekranı" loading="lazy" /></button>
-            <button class="phone phone-right" type="button" data-lightbox="/assets/images/charge-mahal-history.jpg" data-caption="Şarj geçmişi ve istatistik ekranı"><img src="/assets/images/charge-mahal-history.jpg" alt="Charge Mahal geçmiş mobil ekranı" loading="lazy" /></button>
-            <span class="privacy-note">Kişisel bilgiler gizlenmiştir.</span>
+          <div class="phone-stage" aria-label="Charge Mahal mobil uygulama ekranları">
+            <button class="phone phone-left" type="button" data-lightbox="/assets/images/charge-mahal-live.jpg" data-caption="İstasyonların anlık durum ekranı">
+              <img src="/assets/images/charge-mahal-live.jpg" alt="Charge Mahal anlık durum mobil ekranı" loading="lazy" />
+            </button>
+            <button class="phone phone-main" type="button" data-lightbox="/assets/images/charge-mahal-active.jpg" data-caption="Aktif şarj işlemleri ekranı">
+              <img src="/assets/images/charge-mahal-active.jpg" alt="Charge Mahal aktif işlemler mobil ekranı" loading="lazy" />
+            </button>
+            <button class="phone phone-right" type="button" data-lightbox="/assets/images/charge-mahal-history.jpg" data-caption="Şarj geçmişi ve istatistik ekranı">
+              <img src="/assets/images/charge-mahal-history.jpg" alt="Charge Mahal geçmiş mobil ekranı" loading="lazy" />
+            </button>
+            <span class="privacy-note" data-i18n="privacy_note">Kişisel bilgiler gizlenmiştir.</span>
           </div>
         </article>
 
         <div class="project-pair">
           <article class="mini-project reveal">
-            <div class="project-meta"><span>04 / DONANIM</span><span>KİŞİSEL PROJE</span></div>
+            <div class="project-meta"><span data-i18n="mini1_meta1">04 / DONANIM</span><span data-i18n="mini1_meta2">KİŞİSEL PROJE</span></div>
             <button class="mini-image" type="button" data-lightbox="/assets/images/spot-welder.jpg" data-caption="MOT trafo, zamanlayıcı ve el tipi elektrot kaleminden oluşan punta kaynak makinesi"><img src="/assets/images/spot-welder.jpg" alt="El yapımı punta kaynak makinesi" loading="lazy" /></button>
-            <h3>El Yapımı Punta Kaynak Makinesi</h3>
-            <p>MOT trafosunun sekonder sargısını yüksek akım ve düşük gerilim için yeniden sardım; dijital zamanlayıcı ve kendi ürettiğim bakır elektrot kalemiyle çalışan bir sistem oluşturdum.</p>
+            <h3 data-i18n="mini1_h3">El Yapımı Punta Kaynak Makinesi</h3>
+            <p data-i18n="mini1_p">MOT trafosunun sekonder sargısını yüksek akım ve düşük gerilim için yeniden sardım; dijital zamanlayıcı ve kendi ürettiğim bakır elektrot kalemiyle çalışan bir sistem oluşturdum.</p>
             <div class="tech-row"><span>Güç Elektroniği</span><span>Prototipleme</span></div>
           </article>
           <article class="mini-project reveal">
-            <div class="project-meta"><span>05 / BATARYA</span><span>İKA DONANIMI</span></div>
-            <button class="mini-image battery-project-image" type="button" data-lightbox="/assets/images/ika-battery-pack.jpg" data-caption="İnsansız kara aracı için hazırlanan 8S Li-ion batarya paketi"><img src="/assets/images/ika-battery-pack.jpg" alt="İnsansız kara aracı için hazırlanan 8S Li-ion batarya paketi" loading="lazy" /></button>
-            <h3>8S Li-ion Batarya Paketi</h3>
-            <p>İnsansız kara aracı için 8S konfigürasyonlu Li-ion batarya paketinin hücre bağlantılarını hazırladım ve BMS entegrasyonunda görev aldım. Hücre voltajlarını ve sıcaklık değerlerini mobil uygulama üzerinden izledim.</p>
-            <div class="tech-row"><span>Li-ion</span><span>8S Paket</span><span>BMS</span><span>Batarya İzleme</span></div>
+            <div class="project-meta"><span data-i18n="mini2_meta1">05 / BATARYA</span><span data-i18n="mini2_meta2">İKA DONANIMI</span></div>
+            <button class="mini-image battery-project-image" type="button" data-lightbox="/assets/images/ika-battery-pack.jpg" data-caption="İnsansız kara aracı için hazırlanan 13S6P Li-ion batarya paketi"><img src="/assets/images/ika-battery-pack.jpg" alt="İnsansız kara aracı için hazırlanan 13S6P Li-ion batarya paketi" loading="lazy" /></button>
+            <h3 data-i18n="mini2_h3">13S6P Li-ion Batarya Paketi</h3>
+            <p data-i18n="mini2_p">İnsansız kara aracı için 13S6P konfigürasyonlu Li-ion batarya paketinin hücre bağlantılarını hazırladım ve BMS entegrasyonunda görev aldım. Hücre voltajlarını ve sıcaklık değerlerini mobil uygulama üzerinden izledim.</p>
+            <div class="tech-row"><span>Li-ion</span><span>13S6P Paket</span><span>BMS</span><span>Batarya İzleme</span></div>
           </article>
         </div>
       </section>
 
       <section class="section experience-section" id="experience">
-        <div class="section-label reveal"><span>04</span><p>Deneyim</p></div>
+        <div class="section-label reveal"><span>04</span><p data-i18n="nav_experience">Deneyim</p></div>
         <div class="experience-layout">
           <div class="experience-title reveal">
-            <p class="eyebrow">Sahadan ürüne</p>
-            <h2>Teknik deneyim, kullanıcı ihtiyacıyla birleştiğinde değer üretir.</h2>
+            <p class="eyebrow" data-i18n="experience_eyebrow">Sahadan ürüne</p>
+            <h2 data-i18n="experience_h2">Teknik deneyim, kullanıcı ihtiyacıyla birleştiğinde değer üretir.</h2>
           </div>
           <div class="timeline">
             <article class="timeline-item reveal">
-              <div class="timeline-date">2025 — ŞİMDİ</div>
-              <div class="timeline-content"><span class="current-tag">Güncel</span><h3>Teknik Destek, Operasyon &amp; Ürün Geliştirme</h3><h4>Charge Mahal Enerji A.Ş.</h4><p>EV şarj istasyonlarının aktiflik, arıza, ödeme ve kullanıcı süreçlerini yürütüyorum. Yeni istasyon aktivasyonuna, tüketim ve gelir raporlamasına katkı sağlıyorum; operasyon ihtiyaçlarına yönelik web, mobil ve tahsilat araçları geliştiriyorum.</p></div>
+              <div class="timeline-date" data-i18n="job1_date">2025 — ŞİMDİ</div>
+              <div class="timeline-content"><span class="current-tag" data-i18n="job1_current">Güncel</span><h3 data-i18n="job1_title">Teknik Destek &amp; Operasyon Sorumlusu</h3><h4>Charge Mahal Enerji A.Ş.</h4><ul>
+                <li data-i18n="job1_li1">EV şarj istasyonu platformunda istasyonların günlük operasyonunu, aktiflik durumunu ve kullanıcı deneyimini takip ediyor, teknik süreçleri yürütüyorum.</li>
+                <li data-i18n="job1_li2">Arıza, bağlantı, ödeme ve şarj başlatma sorunları için kayıt açıp teknik ekip ve saha personeliyle koordine ediyor; kullanıcı taleplerine (ödeme/iade/fatura) çözüm sunuyorum.</li>
+                <li data-i18n="job1_li3">Yeni istasyonların sisteme eklenmesi, aktivasyonu ve gelir raporlamasını yürütüyorum; kurumsal web sitesi, operatör mobil uygulaması ve tahsilat panelini geliştirdim.</li>
+                <li data-i18n="job1_li4">Şarj istasyonlarının tüketim, gelir, oturum ve kullanım verilerini analiz ederek raporluyorum.</li>
+              </ul></div>
             </article>
             <article class="timeline-item reveal">
               <div class="timeline-date">2024</div>
-              <div class="timeline-content"><h3>Satış Asistanı &amp; Depo Sorumlusu</h3><h4>FLO Perakende ve Pazarlama A.Ş.</h4><p>Müşteri ilişkileri, stok takibi ve depo düzeni süreçlerinde aktif görev aldım.</p></div>
+              <div class="timeline-content"><h3 data-i18n="job2_title">Satış Danışmanı &amp; Depo Sorumlusu</h3><h4>FLO Perakende ve Pazarlama A.Ş.</h4><p data-i18n="job2_p">Müşteri ilişkileri, stok takibi ve depo düzeni süreçlerinde aktif görev aldım.</p></div>
             </article>
             <article class="timeline-item reveal">
               <div class="timeline-date">2023</div>
-              <div class="timeline-content"><h3>Teknik Destek / Üretim Sahası</h3><h4>Esginler Group İnşaat</h4><p>Tiny house üretim sahasında montaj sürecinde teknik ekiple koordineli çalıştım.</p></div>
+              <div class="timeline-content"><h3 data-i18n="job3_title">Teknik Destek / Üretim Sahası</h3><h4>Esginler Group İnşaat</h4><p data-i18n="job3_p">Tiny house üretim sahasında montaj sürecinde teknik ekiple koordineli çalıştım.</p></div>
             </article>
           </div>
         </div>
@@ -274,82 +330,82 @@
 
       <section class="section capabilities-section" id="capabilities">
         <div class="section-intro reveal">
-          <div class="section-label"><span>05</span><p>Yetkinlikler</p></div>
-          <h2>Araçlardan önce<br /><em>üretme biçimim.</em></h2>
+          <div class="section-label"><span>05</span><p data-i18n="nav_capabilities">Yetkinlikler</p></div>
+          <h2 data-i18n-html="capabilities_h2">Araçlardan önce<br /><em>üretme biçimim.</em></h2>
         </div>
         <div class="capability-list">
-          <article class="capability reveal"><span>01</span><h3>Yazılım geliştirme</h3><p>C/C++, Python, Java, Dart/Flutter, PHP, JavaScript, Node.js/Express</p><i>↗</i></article>
-          <article class="capability reveal"><span>02</span><h3>Sistemler &amp; veri</h3><p>Linux, Shell, Git/GitHub, REST API, JWT, MySQL, MongoDB, Apache</p><i>↗</i></article>
-          <article class="capability reveal"><span>03</span><h3>IoT &amp; elektronik</h3><p>ESP32, Arduino, sensör entegrasyonu, IMU, gerinim ölçer (strain gauge), prototipleme</p><i>↗</i></article>
-          <article class="capability reveal"><span>04</span><h3>RF &amp; sinyal</h3><p>PlutoSDR, Welch PSD, spektrum izleme, yön bulma, PySide6</p><i>↗</i></article>
+          <article class="capability reveal"><span>01</span><h3 data-i18n="cap1_title">Yazılım geliştirme</h3><p>C/C++, Python, Java, Dart/Flutter, PHP, JavaScript, Node.js/Express</p><i>↗</i></article>
+          <article class="capability reveal"><span>02</span><h3 data-i18n="cap2_title">Sistemler &amp; veri</h3><p>Linux, Shell, Git/GitHub, REST API, JWT, MySQL, MongoDB</p><i>↗</i></article>
+          <article class="capability reveal"><span>03</span><h3 data-i18n="cap3_title">IoT &amp; elektronik</h3><p>ESP32, Arduino, sensör entegrasyonu, IMU, gerinim ölçer (strain gauge), prototipleme</p><i>↗</i></article>
+          <article class="capability reveal"><span>04</span><h3 data-i18n="cap4_title">RF &amp; sinyal</h3><p>PlutoSDR, Welch PSD, spektrum izleme, yön bulma, PySide6</p><i>↗</i></article>
         </div>
       </section>
 
       <section class="section journey-section" id="journey">
-        <div class="section-label reveal"><span>06</span><p>Eğitim &amp; yolculuk</p></div>
-        <div class="journey-heading reveal"><h2>Sürekli öğrenme,<br />sürekli üretim.</h2><p>Üniversite eğitimi, proje tabanlı yazılım pratiği ve farklı teknoloji disiplinlerinden beslenen bir gelişim rotası.</p></div>
+        <div class="section-label reveal"><span>06</span><p data-i18n="nav_journey">Eğitim &amp; yolculuk</p></div>
+        <div class="journey-heading reveal"><h2 data-i18n-html="journey_h2">Sürekli öğrenme,<br />sürekli üretim.</h2><p data-i18n="journey_p">Üniversite eğitimi, proje tabanlı yazılım pratiği ve farklı teknoloji disiplinlerinden beslenen bir gelişim rotası.</p></div>
         <div class="journey-grid">
-          <article class="journey-card reveal"><span class="journey-year">2025 · Piscine tamamlandı</span><small>Proje tabanlı program</small><h3>42 İstanbul</h3><p>École 42 · Yoğun ve akran değerlendirmeli yazılım eğitimi</p></article>
-          <article class="journey-card journey-accent reveal"><span class="journey-year">2023 — Devam Ediyor</span><small>Lisans</small><h3>Biruni Üniversitesi</h3><p>Bilgisayar Mühendisliği<br />(İngilizce)</p></article>
-          <article class="journey-card reveal"><span class="journey-year">2024 — 2025</span><small>Sertifika &amp; katılım</small><h3>Teknik gelişim</h3><ul><li>Etik Hacker: Web Sızma Testleri &amp; Bug Bounty</li><li>T3 Su Altı Sistemleri</li><li>Milli Teknoloji Zirvesi</li><li>T3 İnsansız Deniz Aracı</li></ul></article>
+          <article class="journey-card reveal"><span class="journey-year" data-i18n="card1_year">2025 · Piscine tamamlandı</span><small data-i18n="card1_small">Proje tabanlı program</small><h3>42 İstanbul</h3><p data-i18n="card1_p">École 42 · Yoğun ve akran değerlendirmeli yazılım eğitimi</p></article>
+          <article class="journey-card journey-accent reveal"><span class="journey-year" data-i18n="card2_year">2023 — Devam Ediyor</span><small data-i18n="card2_small">Lisans</small><h3>Biruni Üniversitesi</h3><p data-i18n-html="card2_p">Bilgisayar Mühendisliği<br />(İngilizce)</p></article>
+          <article class="journey-card reveal"><span class="journey-year">2024 — 2025</span><small data-i18n="card3_small">Sertifika &amp; katılım</small><h3 data-i18n="card3_h3">Teknik gelişim</h3><ul><li data-i18n="card3_li1">Etik Hacker: Web Sızma Testleri &amp; Bug Bounty</li><li data-i18n="card3_li2">T3 Su Altı Sistemleri</li><li data-i18n="card3_li3">Milli Teknoloji Zirvesi</li><li data-i18n="card3_li4">T3 İnsansız Deniz Aracı</li></ul></article>
         </div>
         <div class="teknofest-band reveal">
           <div class="teknofest-intro">
             <span>TEKNOFEST 2026</span>
-            <h3>Üç takım projesinde farklı mühendislik disiplinlerine katkı sağlıyorum.</h3>
-            <p>Yazılım, sinyal işleme, elektronik ve mekanik üretim tarafında edindiğim deneyimi üç ayrı proje alanında bir araya getiriyorum.</p>
+            <h3 data-i18n="teknofest_h3">TEKNOFEST 2026’da üç farklı kategoride yer alıyorum.</h3>
+            <p data-i18n="teknofest_p">Yazılım, sinyal işleme, elektronik ve mekanik üretim tarafındaki deneyimimi üç ayrı proje alanında bir araya getiriyorum.</p>
           </div>
           <div class="teknofest-project-list">
-            <article><span>01</span><div><h4>İnsansız Kara Aracı</h4><p>Araç mekaniği, 3B tasarım, pil devreleri ve 8S Li-ion batarya paketinin BMS entegrasyonu üzerinde çalışıyorum.</p></div></article>
-            <article><span>02</span><div><h4>Elektronik Harp</h4><p>PlutoSDR tabanlı RF sinyal tespiti, parametre çıkarımı, sınıflandırma, yön bulma ve konum kestirimi yazılımına katkı sağlıyorum.</p></div></article>
-            <article><span>03</span><div><h4>Çip Tasarım</h4><p>RISC-V tabanlı milli mikrodenetleyici mimarisi üzerine yürütülen takım çalışmasına katkı sağlıyorum.</p></div></article>
+            <article><span>01</span><div><h4 data-i18n="tekno1_h4">İnsansız Kara Aracı</h4><p data-i18n="tekno1_p">Araç mekaniği, 3B tasarım, pil devreleri ve 13S6P Li-ion batarya paketinin BMS entegrasyonu üzerinde çalışıyorum; şu an video aşamasındayız.</p></div></article>
+            <article><span>02</span><div><h4 data-i18n="tekno2_h4">Elektronik Harp</h4><p data-i18n="tekno2_p">PlutoSDR tabanlı RF sinyal tespiti, parametre çıkarımı, sınıflandırma, yön bulma ve konum kestirimi yazılımını yürütüyorum.</p></div></article>
+            <article><span>03</span><div><h4 data-i18n="tekno3_h4">Çip Tasarım</h4><p data-i18n="tekno3_p">RISC-V tabanlı milli mikrodenetleyici mimarisi üzerine çalışan takımda görev aldım; KTR (Kritik Tasarım Raporu) aşamasında elendik.</p></div></article>
           </div>
         </div>
       </section>
 
       <section class="section certificates-section" id="certificates">
         <div class="certificates-heading reveal">
-          <div class="section-label"><span>07</span><p>Sertifikalar</p></div>
+          <div class="section-label"><span>07</span><p data-i18n="nav_certificates">Sertifikalar</p></div>
           <div>
-            <p class="eyebrow">Doğrulanabilir belgeler</p>
-            <h2>Teknik gelişimi<br />belgelerle destekliyorum.</h2>
+            <p class="eyebrow" data-i18n="cert_eyebrow">Doğrulanabilir belgeler</p>
+            <h2 data-i18n-html="cert_h2">Teknik gelişimi<br />belgelerle destekliyorum.</h2>
           </div>
-          <p>Siber güvenlik, su altı sistemleri ve milli teknoloji alanlarında tamamladığım eğitim ve katılım programları.</p>
+          <p data-i18n="cert_p">Siber güvenlik, su altı sistemleri ve milli teknoloji alanlarında tamamladığım eğitim ve katılım programları.</p>
         </div>
         <div class="certificate-grid">
-          <a class="certificate-card reveal" href="./assets/certificates/Etik_Hacker_Web_Sizma_Testleri.pdf" target="_blank" rel="noopener" aria-label="Web Sızma Testleri ve Bug Bounty sertifikasını aç">
+          <a class="certificate-card reveal" href="./assets/certificates/Etik_Hacker_Web_Sizma_Testleri.pdf" target="_blank" rel="noopener" aria-label="Web Sızma Testleri ve Bug Bounty sertifikasını aç" data-i18n-aria="cert1_aria">
             <figure><img src="/assets/images/certificates/web-sizma-testleri.jpg" alt="Udemy Etik Hacker Olmak: Web Sızma Testleri ve Bug Bounty bitirme sertifikası" loading="lazy" /></figure>
-            <div><span>Udemy · 09 Ekim 2024</span><h3>Web Sızma Testleri ve Bug Bounty</h3><p>21 saatlik etik hacker ve web güvenliği eğitimi.</p><strong>Belgeyi aç ↗</strong></div>
+            <div><span>Udemy · 09 Ekim 2024</span><h3 data-i18n="cert1_h3">Web Sızma Testleri ve Bug Bounty</h3><p data-i18n="cert1_p">21 saatlik etik hacker ve web güvenliği eğitimi.</p><strong data-i18n="cert_open_doc">Belgeyi aç ↗</strong></div>
           </a>
-          <a class="certificate-card reveal" href="./assets/certificates/T3_Su_Alti_Sistemleri.pdf" target="_blank" rel="noopener" aria-label="T3 Su Altı Sistemleri katılım belgesini aç">
+          <a class="certificate-card reveal" href="./assets/certificates/T3_Su_Alti_Sistemleri.pdf" target="_blank" rel="noopener" aria-label="T3 Su Altı Sistemleri katılım belgesini aç" data-i18n-aria="cert2_aria">
             <figure><img src="/assets/images/certificates/t3-su-alti-sistemleri.jpg" alt="T3 Su Altı Sistemleri eğitimleri katılım belgesi" loading="lazy" /></figure>
-            <div><span>Deneyap · 06–10 Ocak 2025</span><h3>T3 Su Altı Sistemleri</h3><p>Su altı sistemleri eğitim programı katılım belgesi.</p><strong>Belgeyi aç ↗</strong></div>
+            <div><span>Deneyap · 06–10 Ocak 2025</span><h3>T3 Su Altı Sistemleri</h3><p data-i18n="cert2_p">Su altı sistemleri eğitim programı katılım belgesi.</p><strong data-i18n="cert_open_doc">Belgeyi aç ↗</strong></div>
           </a>
-          <a class="certificate-card reveal" href="./assets/certificates/T3_Insansiz_Deniz_Araci.pdf" target="_blank" rel="noopener" aria-label="T3 İnsansız Deniz Aracı katılım sertifikasını aç">
+          <a class="certificate-card reveal" href="./assets/certificates/T3_Insansiz_Deniz_Araci.pdf" target="_blank" rel="noopener" aria-label="T3 İnsansız Deniz Aracı katılım sertifikasını aç" data-i18n-aria="cert3_aria">
             <figure><img src="/assets/images/certificates/t3-insansiz-deniz-araci.jpg" alt="T3 İnsansız Deniz Aracı eğitimi katılım sertifikası" loading="lazy" /></figure>
-            <div><span>T3 Vakfı · 30 Haziran–04 Temmuz 2025</span><h3>İnsansız Deniz Aracı Eğitimi</h3><p>İnsansız deniz aracı teknolojileri eğitim programı.</p><strong>Belgeyi aç ↗</strong></div>
+            <div><span>T3 Vakfı · 30 Haziran–04 Temmuz 2025</span><h3 data-i18n="cert3_h3">İnsansız Deniz Aracı Eğitimi</h3><p data-i18n="cert3_p">İnsansız deniz aracı teknolojileri eğitim programı.</p><strong data-i18n="cert_open_doc">Belgeyi aç ↗</strong></div>
           </a>
-          <a class="certificate-card reveal" href="./assets/certificates/Milli_Teknoloji_Zirvesi.jpg" target="_blank" rel="noopener" aria-label="Milli Teknoloji Zirvesi katılım sertifikasını aç">
+          <a class="certificate-card reveal" href="./assets/certificates/Milli_Teknoloji_Zirvesi.jpg" target="_blank" rel="noopener" aria-label="Milli Teknoloji Zirvesi katılım sertifikasını aç" data-i18n-aria="cert4_aria">
             <figure><img src="/assets/images/certificates/milli-teknoloji-zirvesi.jpg" alt="Milli Teknoloji Zirvesi katılım sertifikası" loading="lazy" /></figure>
-            <div><span>İTÜ · 29–30 Mayıs 2025</span><h3>Milli Teknoloji Zirvesi</h3><p>İTÜ Teknofest Kulübü tarafından düzenlenen zirve katılımı.</p><strong>Belgeyi aç ↗</strong></div>
+            <div><span>İTÜ · 29–30 Mayıs 2025</span><h3 data-i18n="cert4_h3">Milli Teknoloji Zirvesi</h3><p data-i18n="cert4_p">İTÜ Teknofest Kulübü tarafından düzenlenen zirve katılımı.</p><strong data-i18n="cert_open_doc">Belgeyi aç ↗</strong></div>
           </a>
         </div>
       </section>
 
       <section class="final-contact" id="contact">
         <div class="final-orbit" aria-hidden="true"><span></span><span></span><i>TY</i></div>
-        <p class="eyebrow reveal">Bir sonraki proje</p>
-        <h2 class="reveal">Birlikte bir şey<br /><em>üretelim.</em></h2>
-        <p class="reveal">Bir fikir, teknik problem veya ekip fırsatı için doğrudan ulaşabilirsin.</p>
-        <a class="final-mail reveal" href="mailto:ylmtalha05@gmail.com?subject=Portfolyo%20%C3%BCzerinden%20ileti%C5%9Fim">E-posta gönder <span>↗</span></a>
-        <div class="final-meta reveal"><span>İstanbul / Arnavutköy</span><span>İletişim: E-posta · Telefon · LinkedIn</span></div>
+        <p class="eyebrow reveal" data-i18n="final_eyebrow">Bir sonraki proje</p>
+        <h2 class="reveal" data-i18n-html="final_h2">Birlikte bir şey<br /><em>üretelim.</em></h2>
+        <p class="reveal" data-i18n="final_p">Bir fikir, teknik problem veya ekip fırsatı için doğrudan ulaşabilirsin.</p>
+        <a class="final-mail reveal" href="mailto:ylmtalha05@gmail.com?subject=Portfolyo%20%C3%BCzerinden%20ileti%C5%9Fim"><span data-i18n="final_mail">E-posta gönder</span> <span>↗</span></a>
+        <div class="final-meta reveal"><span>İstanbul / Arnavutköy</span><span data-i18n="focus_tags">Sistemler · Web · Gömülü · Güvenlik</span></div>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>© 2026 Talha Yılmaz</span>
-      <div><a href="https://github.com/YlmTalha" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/talha-yilmaz-1216672a6/" target="_blank" rel="noopener">LinkedIn</a><a href="#top">Başa dön ↑</a></div>
-      <span>Yazılım · Sistemler · IoT · RF</span>
+      <div><a href="https://github.com/YlmTalha" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/talha-yilmaz-1216672a6/" target="_blank" rel="noopener">LinkedIn</a><a href="#top"><span data-i18n="footer_back_top">Başa dön</span> ↑</a></div>
+      <span data-i18n="focus_tags">Sistemler · Web · Gömülü · Güvenlik</span>
     </footer>
 
     <dialog class="lightbox" aria-label="Proje görseli">
@@ -357,6 +413,7 @@
       <figure><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" /><figcaption></figcaption></figure>
     </dialog>
 
+    <script src="/i18n.js"></script>
     <script type="module" src="/app.js"></script>
   </body>
 </html>

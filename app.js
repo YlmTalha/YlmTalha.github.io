@@ -9,22 +9,54 @@ const updateHeader = () => header?.classList.toggle('scrolled', window.scrollY >
 updateHeader();
 window.addEventListener('scroll', updateHeader, { passive: true });
 
-function closeMenu() {
+// Scroll progress bar
+const scrollProgressBar = document.querySelector('.scroll-progress span');
+const updateScrollProgress = () => {
+  if (!scrollProgressBar) return;
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+  scrollProgressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+};
+updateScrollProgress();
+window.addEventListener('scroll', updateScrollProgress, { passive: true });
+window.addEventListener('resize', updateScrollProgress, { passive: true });
+
+let lastFocusedElement = null;
+
+function closeMenu({ restoreFocus = false } = {}) {
   menuButton?.setAttribute('aria-expanded', 'false');
   navigation?.classList.remove('open');
   document.body.classList.remove('menu-open');
+  if (restoreFocus && lastFocusedElement instanceof HTMLElement) lastFocusedElement.focus();
 }
 
 menuButton?.addEventListener('click', () => {
   const willOpen = menuButton.getAttribute('aria-expanded') !== 'true';
+  if (willOpen) lastFocusedElement = document.activeElement;
   menuButton.setAttribute('aria-expanded', String(willOpen));
   navigation?.classList.toggle('open', willOpen);
   document.body.classList.toggle('menu-open', willOpen);
+  if (willOpen) {
+    requestAnimationFrame(() => navigation?.querySelector('a')?.focus({ preventScroll: true }));
+  } else {
+    menuButton.focus({ preventScroll: true });
+  }
 });
 
 navigation?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
 window.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') closeMenu();
+  if (event.key === 'Escape') closeMenu({ restoreFocus: true });
+});
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 860 && navigation?.classList.contains('open')) closeMenu();
+}, { passive: true });
+
+// Open document links explicitly in a new tab.
+document.querySelectorAll('a[target="_blank"][href$=".pdf"]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.open(link.href, '_blank', 'noopener');
+  });
 });
 
 // Reveal sections progressively

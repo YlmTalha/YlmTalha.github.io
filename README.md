@@ -1,6 +1,6 @@
 # Talha Yılmaz — Portfolio
 
-Talha Yılmaz'ın yazılım, sistem programlama, IoT/elektronik ve RF/sinyal analizi çalışmalarını sunan kişisel portföy sitesi.
+Talha Yılmaz'ın sistemler, web, gömülü elektronik/IoT ve siber güvenlik alanlarındaki çalışmalarını sunan kişisel portföy sitesi.
 
 Canlı yayın adresi: `https://ylmtalha.github.io/`
 
@@ -21,8 +21,7 @@ Site yalnızca Vite geliştirme bağımlılığını kullanır. Arayüz ve etkil
 
 ## Belgeler
 
-- `assets/documents/Talha_Yilmaz_CV.pdf`: ATS uyumlu, tek sütunlu PDF CV
-- `assets/documents/Talha_Yilmaz_ATS_CV.docx`: düzenlenebilir ATS CV
+- `assets/documents/ATS_CV.pdf`: ATS uyumlu, tek sütunlu PDF CV
 - `assets/documents/Talha_Yilmaz_Portfolyo.pdf`: ayrıntılı proje portfolyosu
 
 ## GitHub Pages'e yükleme
