@@ -174,7 +174,11 @@ img { display: block; max-width: 100%; }
 .project-code-link:hover { gap: 12px; }
 .project-media { display: grid; gap: 12px; min-height: 580px; }
 .rf-media { grid-template-columns: 1fr 1fr; grid-template-rows: .72fr 1fr; }
-.ika-media { grid-template-columns: 1fr; height: clamp(560px, 50vw, 720px); min-height: 0; }
+.project-ika { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); align-items: center; }
+.project-ika .project-info > p { max-width: 640px; font-size: 17px; }
+.project-ika .project-info li { margin: 12px 0; font-size: 15px; }
+.project-ika .tech-row span { font-size: 10px; }
+.ika-media { grid-template-columns: 1fr; width: 100%; max-width: 500px; justify-self: end; aspect-ratio: 4 / 5; height: auto; min-height: 0; }
 .ika-media .media-card { height: 100%; }
 .ika-media .media-card img { object-position: center 60%; }
 .mini-image.welder-project-image img { object-fit: cover; }
@@ -348,6 +352,7 @@ img { display: block; max-width: 100%; }
   .section-intro { grid-template-columns: .5fr 1.3fr; }
   .section-intro > p { grid-column: 2; max-width: 600px; }
   .project, .project-reverse { grid-template-columns: .8fr 1.2fr; gap: 50px; }
+  .project-ika { grid-template-columns: 1.1fr .9fr; }
   .project-reverse .project-info { order: 0; }
   .journey-grid { grid-template-columns: 1fr 1fr; }
   .journey-card:last-child { grid-column: 1 / -1; min-height: auto; }
@@ -483,7 +488,8 @@ img { display: block; max-width: 100%; }
   .contact-links a:nth-child(2) { border-top: 0; }
   .section-intro { display: block; }
   .section-intro h2 { max-width: 720px; margin: 48px 0 25px; }
-  .project, .project-reverse { grid-template-columns: 1fr; gap: 42px; }
+  .project, .project-reverse, .project-ika { grid-template-columns: 1fr; gap: 42px; }
+  .ika-media { max-width: none; justify-self: stretch; }
   .project-reverse .project-info { order: 0; }
   .project-media { min-height: 500px; }
   .phone-stage { min-height: 580px; }
