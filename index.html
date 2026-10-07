@@ -157,7 +157,7 @@
           <div class="about-copy reveal">
             <p class="lead-copy" data-i18n="about_p1">Ben Talha. Biruni Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Yazılım, sistemler, IoT/elektronik ve teknik operasyon alanlarında uygulamalı deneyim kazanıyorum.</p>
             <p data-i18n="about_p2">Charge Mahal Enerji’de teknik destek ve operasyonun yanında yazılım bağlantılı işlerde çalışıyorum; sahada gördüğüm ihtiyaçları web, mobil ve tahsilat araçlarına dönüştürüyorum.</p>
-            <p data-i18n="about_p3">TEKNOFEST 2026’da üç farklı kategoride yer alıyorum. Elektronik Harp’te takımımızın RF sinyal analizi ve yazılım tarafını yürütüyorum. İnsansız Kara Aracı’nda araç mekaniği ve batarya sistemleriyle ilgileniyorum, şu an video aşamasındayız. Çip Tasarım’da ise RISC-V tabanlı mikrodenetleyici üzerinde çalıştığımız takım KTR aşamasında elendi.</p>
+            <p data-i18n="about_p3">TEKNOFEST 2026’da üç farklı kategoride yer alıyorum. Elektronik Harp’te takımımızın RF sinyal analizi ve yazılım tarafını yürütüyorum. İnsansız Kara Aracı’nda KAİRA KGM takımıyla 5. olduk; şase kaynağından süspansiyon, direksiyon ve hidrolik frene, elektrik panosundan batarya sistemine kadar aracın mekanik ve elektrik üretiminde çalıştım. Çip Tasarım’da ise RISC-V tabanlı mikrodenetleyici üzerinde çalıştığımız takım KTR aşamasında elendi.</p>
             <p data-i18n="about_p4">Siber güvenlik uzun vadede ilerlemek istediğim alanlardan biri; hangi alt alanda derinleşeceğimi proje ve iş deneyimleriyle keşfetmeye devam ediyorum. Hedefim, teknoloji üreten ekiplerde yer almak ve Milli Teknoloji Hamlesi vizyonuna katkı sağlayacak projelerde görev almak.</p>
           </div>
         </div>
@@ -193,9 +193,59 @@
           <p data-i18n="work_p">Yazılımdan fiziksel prototipe uzanan, farklı disiplinleri aynı sonuçta buluşturan seçili çalışmalar.</p>
         </div>
 
+        <article class="project reveal" data-category="hardware">
+          <div class="project-info">
+            <div class="project-meta"><span data-i18n="projika_meta1">01 / ARAÇ + DONANIM</span><span data-i18n="projika_meta2">TEKNOFEST 2026 · İKA · 5.LİK</span></div>
+            <h3 data-i18n-html="projika_h3">KAİRA KGM<br />İnsansız Kara Aracı</h3>
+            <p data-i18n="projika_p">Tamamı bilgisayar mühendislerinden oluşan 10 kişilik takımımızla sıfırdan ürettiğimiz insansız kara aracı, TEKNOFEST 2026 İKA yarışmasında 5. oldu. Aracın mekanik ve elektrik üretim tarafında çalıştım.</p>
+            <ul>
+              <li data-i18n="projika_li1">Şasenin kaynağı ve montajı</li>
+              <li data-i18n="projika_li2">Süspansiyon, ön teker ve direksiyon takımı montajı; rot-balans ayarı</li>
+              <li data-i18n="projika_li3">Hidrolik fren sisteminin montajı</li>
+              <li data-i18n="projika_li4">Elektrik-elektronik pano montajı ve kablolaması; kamera ve elektronik donanımın araca montajı</li>
+              <li data-i18n="projika_li5">13S6P Li-ion batarya paketinin hazırlanması ve BMS entegrasyonu</li>
+            </ul>
+            <div class="tech-row"><span data-i18n="projika_t1">Kaynak</span><span data-i18n="projika_t2">Şase</span><span data-i18n="projika_t3">Süspansiyon</span><span data-i18n="projika_t4">Direksiyon</span><span data-i18n="projika_t5">Hidrolik Fren</span><span data-i18n="projika_t6">Güç Elektroniği</span><span>Li-ion / BMS</span></div>
+          </div>
+          <div class="project-media ika-media">
+            <button class="media-card" type="button" data-lightbox="/assets/images/ika-team-vehicle.jpg" data-caption="TEKNOFEST 2026 · KAİRA KGM insansız kara aracı">
+              <img src="/assets/images/ika-team-vehicle.jpg" alt="Talha Yılmaz, TEKNOFEST 2026'da KAİRA KGM insansız kara aracıyla" loading="lazy" />
+              <span data-i18n="media_ika">TEKNOFEST 2026 · İKA</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="project project-reverse reveal" data-category="software mobile">
+          <div class="project-info">
+            <div class="project-meta"><span data-i18n="proj3_meta1">02 / ÜRÜN + MOBİL</span><span data-i18n="proj3_meta2">İŞ PROJESİ</span></div>
+            <h3 data-i18n-html="proj3_h3">Charge Mahal<br />Dijital Ürünleri</h3>
+            <p data-i18n="proj3_p">EV şarj operasyonunda karşılaşılan gerçek ihtiyaçlardan doğan üç çözüm: kurumsal web sitesi, canlı istasyon takibi yapan operatör uygulaması ve ödeme bağlantısı üreten tahsilat paneli.</p>
+            <ul>
+              <li data-i18n="proj3_li1">İstasyonların aktiflik, arıza, ödeme ve kullanıcı süreçlerinin takibi</li>
+              <li data-i18n="proj3_li2">Flutter ile iOS ve Android operatör uygulaması</li>
+              <li data-i18n="proj3_li3">JWT tabanlı oturum yönetimi ve otomatik token yenileme</li>
+              <li data-i18n="proj3_li4">PayTR API ile ödeme bağlantısı üretme ve WhatsApp üzerinden paylaşma</li>
+            </ul>
+            <div class="tech-row"><span>Flutter</span><span>Dart</span><span>PHP</span><span>MySQL</span><span>REST API</span></div>
+            <a class="project-code-link" href="https://github.com/YlmTalha/Charge-Station-Operator-Panel-Mobile" target="_blank" rel="noopener"><span data-i18n="view_code">Kodu incele</span> <span>↗</span></a>
+          </div>
+          <div class="phone-stage" aria-label="Charge Mahal mobil uygulama ekranları">
+            <button class="phone phone-left" type="button" data-lightbox="/assets/images/charge-mahal-live.jpg" data-caption="İstasyonların anlık durum ekranı">
+              <img src="/assets/images/charge-mahal-live.jpg" alt="Charge Mahal anlık durum mobil ekranı" loading="lazy" />
+            </button>
+            <button class="phone phone-main" type="button" data-lightbox="/assets/images/charge-mahal-active.jpg" data-caption="Aktif şarj işlemleri ekranı">
+              <img src="/assets/images/charge-mahal-active.jpg" alt="Charge Mahal aktif işlemler mobil ekranı" loading="lazy" />
+            </button>
+            <button class="phone phone-right" type="button" data-lightbox="/assets/images/charge-mahal-history.jpg" data-caption="Şarj geçmişi ve istatistik ekranı">
+              <img src="/assets/images/charge-mahal-history.jpg" alt="Charge Mahal geçmiş mobil ekranı" loading="lazy" />
+            </button>
+            <span class="privacy-note" data-i18n="privacy_note">Kişisel bilgiler gizlenmiştir.</span>
+          </div>
+        </article>
+
         <article class="project project-featured reveal" data-category="rf software">
           <div class="project-info">
-            <div class="project-meta"><span data-i18n="proj1_meta1">01 / RF + YAZILIM</span><span data-i18n="proj1_meta2">TEKNOFEST 2026 · ELEKTRONİK HARP</span></div>
+            <div class="project-meta"><span data-i18n="proj1_meta1">03 / RF + YAZILIM</span><span data-i18n="proj1_meta2">TEKNOFEST 2026 · ELEKTRONİK HARP</span></div>
             <h3 data-i18n-html="proj1_h3">RF Sinyal Analizi<br />ve Yön Bulma</h3>
             <p data-i18n="proj1_p">PlutoSDR’dan alınan 2,4 GHz RF kayıtlarında sinyal tespiti, parametre çıkarımı, sınıflandırma, yön bulma ve konum kestirimi adımlarını tek bir arayüzde birleştiren analiz sistemi.</p>
             <ul>
@@ -223,9 +273,9 @@
           </div>
         </article>
 
-        <article class="project reveal" data-category="iot software">
+        <article class="project project-reverse reveal" data-category="iot software">
           <div class="project-info">
-            <div class="project-meta"><span>02 / IoT + WEB</span><span data-i18n="proj2_meta2">TAKIM PROJESİ</span></div>
+            <div class="project-meta"><span>04 / IoT + WEB</span><span data-i18n="proj2_meta2">TAKIM PROJESİ</span></div>
             <h3>LifeCoreSen</h3>
             <p data-i18n="proj2_p">Bina kolonlarındaki nem, su sızıntısı, titreşim ve gerinim verilerini gerçek zamanlı izleyerek durum ve alarm bilgilerini web paneline taşıyan yapısal sağlık izleme sistemi.</p>
             <ul>
@@ -253,61 +303,33 @@
           </div>
         </article>
 
-        <article class="project project-reverse reveal" data-category="software mobile">
-          <div class="project-info">
-            <div class="project-meta"><span data-i18n="proj3_meta1">03 / ÜRÜN + MOBİL</span><span data-i18n="proj3_meta2">İŞ PROJESİ</span></div>
-            <h3 data-i18n-html="proj3_h3">Charge Mahal<br />Dijital Ürünleri</h3>
-            <p data-i18n="proj3_p">EV şarj operasyonunda karşılaşılan gerçek ihtiyaçlardan doğan üç çözüm: kurumsal web sitesi, canlı istasyon takibi yapan operatör uygulaması ve ödeme bağlantısı üreten tahsilat paneli.</p>
-            <ul>
-              <li data-i18n="proj3_li1">İstasyonların aktiflik, arıza, ödeme ve kullanıcı süreçlerinin takibi</li>
-              <li data-i18n="proj3_li2">Flutter ile iOS ve Android operatör uygulaması</li>
-              <li data-i18n="proj3_li3">JWT tabanlı oturum yönetimi ve otomatik token yenileme</li>
-              <li data-i18n="proj3_li4">PayTR API ile ödeme bağlantısı üretme ve WhatsApp üzerinden paylaşma</li>
-            </ul>
-            <div class="tech-row"><span>Flutter</span><span>Dart</span><span>PHP</span><span>MySQL</span><span>REST API</span></div>
-            <a class="project-code-link" href="https://github.com/YlmTalha/Charge-Station-Operator-Panel-Mobile" target="_blank" rel="noopener"><span data-i18n="view_code">Kodu incele</span> <span>↗</span></a>
-          </div>
-          <div class="phone-stage" aria-label="Charge Mahal mobil uygulama ekranları">
-            <button class="phone phone-left" type="button" data-lightbox="/assets/images/charge-mahal-live.jpg" data-caption="İstasyonların anlık durum ekranı">
-              <img src="/assets/images/charge-mahal-live.jpg" alt="Charge Mahal anlık durum mobil ekranı" loading="lazy" />
-            </button>
-            <button class="phone phone-main" type="button" data-lightbox="/assets/images/charge-mahal-active.jpg" data-caption="Aktif şarj işlemleri ekranı">
-              <img src="/assets/images/charge-mahal-active.jpg" alt="Charge Mahal aktif işlemler mobil ekranı" loading="lazy" />
-            </button>
-            <button class="phone phone-right" type="button" data-lightbox="/assets/images/charge-mahal-history.jpg" data-caption="Şarj geçmişi ve istatistik ekranı">
-              <img src="/assets/images/charge-mahal-history.jpg" alt="Charge Mahal geçmiş mobil ekranı" loading="lazy" />
-            </button>
-            <span class="privacy-note" data-i18n="privacy_note">Kişisel bilgiler gizlenmiştir.</span>
-          </div>
-        </article>
-
         <div class="project-pair">
           <article class="mini-project reveal">
-            <div class="project-meta"><span data-i18n="mini1_meta1">04 / DONANIM</span><span data-i18n="mini1_meta2">KİŞİSEL PROJE</span></div>
-            <button class="mini-image" type="button" data-lightbox="/assets/images/spot-welder.jpg" data-caption="MOT trafo, zamanlayıcı ve el tipi elektrot kaleminden oluşan punta kaynak makinesi"><img src="/assets/images/spot-welder.jpg" alt="El yapımı punta kaynak makinesi" loading="lazy" /></button>
-            <h3 data-i18n="mini1_h3">El Yapımı Punta Kaynak Makinesi</h3>
-            <p data-i18n="mini1_p">MOT trafosunun sekonder sargısını yüksek akım ve düşük gerilim için yeniden sardım; dijital zamanlayıcı ve kendi ürettiğim bakır elektrot kalemiyle çalışan bir sistem oluşturdum.</p>
-            <div class="tech-row"><span>Güç Elektroniği</span><span>Prototipleme</span></div>
-          </article>
-          <article class="mini-project reveal">
-            <div class="project-meta"><span data-i18n="mini2_meta1">05 / BATARYA</span><span data-i18n="mini2_meta2">İKA DONANIMI</span></div>
+            <div class="project-meta"><span data-i18n="mini2_meta1">05 / BATARYA</span><span data-i18n="mini2_meta2">İKA · TEKNOFEST 5.Sİ</span></div>
             <button class="mini-image battery-project-image" type="button" data-lightbox="/assets/images/ika-battery-pack.jpg" data-caption="İnsansız kara aracı için hazırlanan 13S6P Li-ion batarya paketi"><img src="/assets/images/ika-battery-pack.jpg" alt="İnsansız kara aracı için hazırlanan 13S6P Li-ion batarya paketi" loading="lazy" /></button>
             <h3 data-i18n="mini2_h3">13S6P Li-ion Batarya Paketi</h3>
             <p data-i18n="mini2_p">İnsansız kara aracı için 13S6P konfigürasyonlu Li-ion batarya paketinin hücre bağlantılarını hazırladım ve BMS entegrasyonunda görev aldım. Hücre voltajlarını ve sıcaklık değerlerini mobil uygulama üzerinden izledim.</p>
             <div class="tech-row"><span>Li-ion</span><span>13S6P Paket</span><span>BMS</span><span>Batarya İzleme</span></div>
           </article>
-          <article class="mini-project mini-wide reveal">
+          <article class="mini-project reveal">
+            <div class="project-meta"><span data-i18n="mini3_meta1">06 / ELEKTRİK</span><span data-i18n="mini3_meta2">İKA · TEKNOFEST 5.Sİ</span></div>
             <button class="mini-image panel-project-image" type="button" data-lightbox="/assets/images/ika-electrical-panel.jpg" data-caption="İnsansız kara aracının güç dağıtımı ve kontrol elektroniği panosu"><img src="/assets/images/ika-electrical-panel.jpg" alt="İnsansız kara aracının elektrik ve kontrol panosu: fırçasız motor sürücüsü, Pixhawk, Arduino Nano kontrol kartı ve DC-DC dönüştürücüler" loading="lazy" /></button>
+            <h3 data-i18n="mini3_h3">İKA Elektrik ve Kontrol Panosu</h3>
+            <p data-i18n="mini3_p">İnsansız kara aracının güç dağıtımını ve kontrol elektroniğini tek bir pano içinde topladık. Panodaki elektrik ve elektronik bileşenlerin montajını ve kablolamasını yaptım; araç TEKNOFEST 2026 İKA yarışmasında 5. oldu.</p>
+            <ul class="panel-specs">
+              <li data-i18n="mini3_li1">Ana batarya hattı sigorta ve kontaktör üzerinden 1000 W fırçasız motor sürücüsüne bağlanıyor</li>
+              <li data-i18n="mini3_li2">12 V ve 24 V DC-DC dönüştürücülerle yardımcı sistemlerin beslenmesi</li>
+              <li data-i18n="mini3_li3">Pixhawk ve Arduino Nano tabanlı kontrol kartı ile motor sürücüleri arasında haberleşme</li>
+            </ul>
+            <div class="tech-row"><span data-i18n="mini3_t1">Güç Dağıtımı</span><span data-i18n="mini3_t2">BLDC Sürücü</span><span>Pixhawk</span><span>Arduino Nano</span><span>DC-DC</span></div>
+          </article>
+          <article class="mini-project mini-wide reveal">
+            <div class="project-meta"><span data-i18n="mini1_meta1">07 / DONANIM</span><span data-i18n="mini1_meta2">KİŞİSEL PROJE</span></div>
+            <button class="mini-image welder-project-image" type="button" data-lightbox="/assets/images/spot-welder.jpg" data-caption="MOT trafo, zamanlayıcı ve el tipi elektrot kaleminden oluşan punta kaynak makinesi"><img src="/assets/images/spot-welder.jpg" alt="El yapımı punta kaynak makinesi" loading="lazy" /></button>
             <div class="mini-wide-body">
-              <div class="project-meta"><span data-i18n="mini3_meta1">06 / ELEKTRİK</span><span data-i18n="mini3_meta2">İKA DONANIMI</span></div>
-              <h3 data-i18n="mini3_h3">İKA Elektrik ve Kontrol Panosu</h3>
-              <p data-i18n="mini3_p">İnsansız kara aracının güç dağıtımını ve kontrol elektroniğini tek bir pano içinde topladık. Panonun kablolaması ve güç hattının kurulumunda görev aldım.</p>
-              <ul class="panel-specs">
-                <li data-i18n="mini3_li1">Ana batarya hattı sigorta ve kontaktör üzerinden 1000 W fırçasız motor sürücüsüne bağlanıyor</li>
-                <li data-i18n="mini3_li2">12 V ve 24 V DC-DC dönüştürücülerle yardımcı sistemlerin beslenmesi</li>
-                <li data-i18n="mini3_li3">Pixhawk ve Arduino Nano tabanlı kontrol kartı ile motor sürücüleri arasında haberleşme</li>
-              </ul>
-              <div class="tech-row"><span data-i18n="mini3_t1">Güç Dağıtımı</span><span data-i18n="mini3_t2">BLDC Sürücü</span><span>Pixhawk</span><span>Arduino Nano</span><span>DC-DC</span></div>
+              <h3 data-i18n="mini1_h3">El Yapımı Punta Kaynak Makinesi</h3>
+              <p data-i18n="mini1_p">MOT trafosunun sekonder sargısını yüksek akım ve düşük gerilim için yeniden sardım; dijital zamanlayıcı ve kendi ürettiğim bakır elektrot kalemiyle çalışan bir sistem oluşturdum.</p>
+              <div class="tech-row"><span>Güç Elektroniği</span><span>Prototipleme</span></div>
             </div>
           </article>
         </div>
@@ -370,7 +392,7 @@
             <p data-i18n="teknofest_p">Yazılım, sinyal işleme, elektronik ve mekanik üretim tarafındaki deneyimimi üç ayrı proje alanında bir araya getiriyorum.</p>
           </div>
           <div class="teknofest-project-list">
-            <article><span>01</span><div><h4 data-i18n="tekno1_h4">İnsansız Kara Aracı</h4><p data-i18n="tekno1_p">Araç mekaniği, 3B tasarım, pil devreleri ve 13S6P Li-ion batarya paketinin BMS entegrasyonu üzerinde çalışıyorum; şu an video aşamasındayız.</p></div></article>
+            <article><span>01</span><div><span class="tekno-result" data-i18n="tekno1_result">5.LİK · KAİRA KGM</span><h4 data-i18n="tekno1_h4">İnsansız Kara Aracı</h4><p data-i18n="tekno1_p">10 kişilik takımımızla sıfırdan ürettiğimiz araçla yarışmayı 5. sırada tamamladık. Şase kaynağı ve montajı, süspansiyon ve direksiyon takımı, hidrolik fren, elektrik panosu ve batarya paketinde görev aldım.</p></div></article>
             <article><span>02</span><div><h4 data-i18n="tekno2_h4">Elektronik Harp</h4><p data-i18n="tekno2_p">PlutoSDR tabanlı RF sinyal tespiti, parametre çıkarımı, sınıflandırma, yön bulma ve konum kestirimi yazılımını yürütüyorum.</p></div></article>
             <article><span>03</span><div><h4 data-i18n="tekno3_h4">Çip Tasarım</h4><p data-i18n="tekno3_p">RISC-V tabanlı milli mikrodenetleyici mimarisi üzerine çalışan takımda görev aldım; KTR (Kritik Tasarım Raporu) aşamasında elendik.</p></div></article>
           </div>
