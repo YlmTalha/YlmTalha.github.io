@@ -218,6 +218,14 @@ img { display: block; max-width: 100%; }
 .mini-image:hover img { transform: scale(1.035); }
 .mini-project h3 { margin: 0 0 18px; font-size: clamp(28px, 3vw, 45px); line-height: 1.04; letter-spacing: -.04em; }
 .mini-project > p { margin: 0; color: #9ca7ad; font-size: 14px; line-height: 1.75; }
+.mini-wide { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(28px, 4vw, 64px); align-items: center; }
+.mini-wide .mini-image { height: 600px; margin: 0; }
+.panel-project-image img { object-fit: cover; }
+.mini-wide-body h3 { margin-top: 32px; }
+.mini-wide-body > p { margin: 0; color: #9ca7ad; font-size: 14px; line-height: 1.75; }
+.panel-specs { margin: 26px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+.panel-specs li { position: relative; padding-left: 20px; color: #9ca7ad; font-size: 14px; line-height: 1.6; }
+.panel-specs li::before { content: ""; position: absolute; left: 0; top: .62em; width: 8px; height: 1px; background: var(--lime); }
 
 /* Experience */
 .experience-section { color: var(--text); background: var(--paper); }
@@ -474,6 +482,12 @@ img { display: block; max-width: 100%; }
   .project-media { min-height: 500px; }
   .phone-stage { min-height: 580px; }
   .project-pair { grid-template-columns: 1fr; }
+  .mini-wide { display: flex; gap: 0; }
+  .mini-wide .mini-image { order: 1; height: 460px; margin: 32px 0; }
+  .mini-wide-body { display: contents; }
+  .mini-wide-body .project-meta { order: 0; }
+  .mini-wide-body h3 { order: 2; margin-top: 0; }
+  .mini-wide-body > p, .panel-specs, .mini-wide-body .tech-row { order: 3; }
   .experience-title { position: static; }
   .timeline-item { grid-template-columns: 1fr; gap: 20px; }
   .timeline-content { margin-left: 5px; }
@@ -550,6 +564,8 @@ img { display: block; max-width: 100%; }
   .project-pair { gap: 14px; }
   .mini-project { padding: 22px 18px; }
   .mini-image { height: 260px; margin: 24px 0; }
+  .mini-wide .mini-image { height: 380px; margin: 24px 0; }
+  .mini-wide-body > p, .panel-specs li { font-size: 13px; }
   .mini-project h3 { font-size: 30px; }
   .mini-project > p { font-size: 13px; }
   .experience-layout { margin-top: 52px; }
