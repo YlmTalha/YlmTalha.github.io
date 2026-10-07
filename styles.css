@@ -665,3 +665,8 @@ img { display: block; max-width: 100%; }
   .capability h3, .capability p, .capability small { grid-column: 2; grid-row: auto; }
   .capability i { grid-row: 1; }
 }
+
+.video-btn { display: inline-flex; align-items: center; gap: 12px; margin-top: 26px; padding: 10px 22px 10px 10px; border: 1px solid var(--lime); border-radius: 99px; color: var(--lime); background: rgba(200,255,74,.08); font: 600 13px var(--mono); letter-spacing: .02em; transition: background .25s, color .25s, transform .25s; }
+.video-play { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; color: var(--ink); background: var(--lime); font-size: 12px; padding-left: 2px; }
+.video-btn:hover { color: var(--ink); background: var(--lime); transform: translateY(-2px); }
+.video-btn:hover .video-play { color: var(--lime); background: var(--ink); }
